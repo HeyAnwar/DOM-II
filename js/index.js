@@ -69,16 +69,13 @@ containerHome.addEventListener('keyup', function(event){
       }, 500);
     }, false);
 //#9
-
+const footColor = document.querySelectorAll('.footer');
+footColor[0].addEventListener('focus', function(event){
+    if(target === '.footer'){
+        event.target.style.background = 'brown'
+    }
+})
 //#10
-
-
-
-
-
-
-
-//preventDefault()
 const cb = document.createElement('input');
 cb.type = 'checkbox';
 document.querySelector('.nav').appendChild(cb);
